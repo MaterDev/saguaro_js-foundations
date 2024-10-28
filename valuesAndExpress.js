@@ -49,3 +49,52 @@ console.log(5/0)
 
 // * PEMDAS (Order of Operations)
     // Code grouped in paretheses will run as a group
+
+// ! Expressions
+let day = "31"
+let month = "5"
+let year = "1990"
+
+// let sistersBirthday = month + '-' + day + '-' + year;
+
+// String template (interpolation)
+let sistersBirthday = `Birthday is... ${month}-${day}-${year}`
+
+console.log(sistersBirthday)
+
+function sayHi() { // Defining the function with a signature
+    console.log("hi")
+}
+
+sayHi() // Executing function
+
+function tripleIt(incNumber) {
+    return incNumber * 3
+}
+
+let tripledNumber = tripleIt(4)
+console.log("tripledNumber: ", tripledNumber)
+
+// ! Truthy & Falsy
+
+if (NaN) {
+    console.log("It's truthy")
+} else {
+    console.log("It's falsy")
+}
+
+let myName = "Key"
+
+if (myName) {
+    console.log(`Hello ${myName}`)
+} else {
+    console.log("What was your name again?")
+}
+
+let myAge = 10
+
+if (myAge) {
+    console.log(`Youre ${myAge} years old`)
+} else {
+    console.log("How old are you?")
+}
